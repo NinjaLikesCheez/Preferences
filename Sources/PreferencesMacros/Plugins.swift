@@ -4,6 +4,12 @@ import SwiftSyntaxMacros
 @main
 struct PreferencesPlugin: CompilerPlugin {
 	let providingMacros: [Macro.Type] = [
-		PreferencesMacro.self
+		PreferencesMacro.self,
+		StorageMacro.self,
 	]
+}
+
+enum MacroNames: String {
+	case preferences = "Preferences"
+	case stored = "Stored"
 }
