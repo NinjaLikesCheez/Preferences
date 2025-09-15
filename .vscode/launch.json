@@ -1,0 +1,22 @@
+{
+	"configurations": [
+		{
+			"type": "swift",
+			"request": "launch",
+			"args": [],
+			"cwd": "${workspaceFolder:Preferences-new}",
+			"name": "Debug PreferencesClient",
+			"program": "${workspaceFolder:Preferences-new}/.build/debug/PreferencesClient",
+			"preLaunchTask": "swift: Build Debug PreferencesClient"
+		},
+		{
+			"type": "swift",
+			"request": "launch",
+			"args": [],
+			"cwd": "${workspaceFolder:Preferences-new}",
+			"name": "Release PreferencesClient",
+			"program": "${workspaceFolder:Preferences-new}/.build/release/PreferencesClient",
+			"preLaunchTask": "swift: Build Release PreferencesClient"
+		}
+	]
+}
